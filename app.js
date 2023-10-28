@@ -16,7 +16,7 @@ let weather = {
       })
       .then((data) => this.displayWeather(data));
   },
-  
+
   displayWeather: function (data) {
     const { name } = data;
     const { icon, description } = data.weather[0];
@@ -52,4 +52,4 @@ document
     }
   });
 
-weather.fetchWeather("New york");
+weather.fetchWeather("Delhi");
