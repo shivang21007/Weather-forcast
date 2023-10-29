@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Assets/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../Assets/images/cloudy.png"
+      type="image/x-icon" />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="container">
+        <a href="/" class="navbar__menu-link"
+          ><img src="../Assets/images/cloudy.png" alt="" class="image"
+        /></a>
+        <div style="width: 300px; display: flex; color: rgba(234, 230, 230, 0.854)">
+          <h3>Weather-App</h3>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__menu-item">
+            <a href="/" class="navbar__menu-link">Home</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="./aboutUs.html" class="navbar__menu-link">About Us</a>
+          </li>
+          <li class="navbar__menu-item">
+            <a href="./contactUs.html" class="navbar__menu-link">Contact Us</a>
+          </li>
+        </ul>
+        <a
+          href="https://github.com/shivang21007/Weather-web-app"
+          target="_blank"
+          class="navbar__menu-link"
+          ><img src="../Assets/images/github_logo.png" alt="" class="image"
+        /></a>
+      </div>
+    </nav>
+
+    <div class="card">
+      <h2>Contact Us</h2>
+      <div class="rectangle"></div>
+      <p style="font-size: 17px">
+        Please feel free to reach out to us for any queries or feedback. We
+        value your input!
+      </p>
+      <div class="contact-form">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Your Name" />
+        </div>
+
+        <br />
+
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Your E-Mail" />
+        </div>
+
+        <br />
+
+        <div class="search">
+          <textarea class="txt" rows="2" placeholder="Your Message"></textarea>
+        </div>
+
+        <div style="display: flex; justify-content: center">
+          <button>Submit</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
