@@ -1,3 +1,12 @@
+document.getElementById('menu-btn').addEventListener('change', function () {
+  var navbarMenu = document.querySelector('.navbar__menu');
+  if (this.checked) {
+    navbarMenu.classList.add('active');
+  } else {
+    navbarMenu.classList.remove('active');
+  }
+});
+
 let weather = {
   apiKey: "c3a14b64fd3eb5f994230183700f79d1",
   fetchWeather: function (city) {
@@ -53,3 +62,5 @@ document
   });
 
 weather.fetchWeather("Delhi");
+
+
