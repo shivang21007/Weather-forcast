@@ -4,9 +4,10 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   background: #222;
-  background-image: url('https://source.unsplash.com/1600x900/?landscape');
+  background-image: url("https://source.unsplash.com/1600x900/?landscape");
+  background-size: cover;
   font-size: 120%;
 }
 
@@ -51,8 +52,7 @@ input.search-bar {
   font-size: 105%;
   width: calc(100% - 100px);
 }
-.txt
-{
+.txt {
   border: none;
   outline: none;
   padding: 0.4em 1em;
@@ -110,7 +110,6 @@ h1.temp {
   margin: 0 calc(var(--navbar__menu-link-padding-x) * -1);
   padding: 0;
   align-items: flex-end;
-  width: 100%;
   list-style: none;
   display: flex;
   justify-content: end;
@@ -121,7 +120,7 @@ h1.temp {
 .navbar__menu-link {
   text-decoration: none;
   color: #fff;
-  font: 600 15px 'Open Sans', sans-serif;
+  font: 600 15px "Open Sans", sans-serif;
   --navbar__menu-link-padding-x: 40px;
   padding: 20px var(--navbar__menu-link-padding-x);
   /* display: block; */
@@ -131,39 +130,71 @@ h1.temp {
   color: #ddd;
 }
 
-
 .navbar__extra {
   width: 110px;
-  transition: .3s ease;
+  transition: 0.3s ease;
   white-space: nowrap;
   text-transform: uppercase;
   display: flex;
   align-items: center;
 }
 
-
 .container {
   width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  }
-.image
-{
-  width:2.5rem;
+  justify-content: space-between;
+}
+.image {
+  width: 2.5rem;
   height: 2.5rem;
 }
 
-.card1
-{
+.card1 {
   max-width: 1000px;
 }
-.rectangle
-{
+.rectangle {
   background-color: white;
-  height:1px;
+  height: 1px;
   display: flex;
   align-items: center;
   width: 100%;
   max-width: 1000px;
+}
+
+.icon_and_name {
+  display: flex;
+  align-items: center;
+}
+
+.container,
+h3 {
+  color: white;
+}
+
+@media screen and (max-width: 986px) {
+  .navbar__menu > li > a {
+    font-size: 12px;
+    display: flex;
+  }
+
+  .container,
+  h3 {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .github_logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .icon_and_name {
+    display: none;
+  }
 }
