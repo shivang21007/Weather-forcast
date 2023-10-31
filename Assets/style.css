@@ -123,6 +123,7 @@ h1.temp {
   font: 600 15px "Open Sans", sans-serif;
   --navbar__menu-link-padding-x: 40px;
   padding: 20px var(--navbar__menu-link-padding-x);
+  /* padding-right: 0; */
   /* display: block; */
 }
 
@@ -196,5 +197,9 @@ h3 {
 @media screen and (max-width: 630px) {
   .icon_and_name {
     display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
   }
 }
